@@ -1,0 +1,137 @@
+body {
+  color: rgb(235, 211, 191);
+  background: url('mybooks.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+}
+
+::placeholder { 
+    color: rgb(235, 211, 191);
+    opacity: 1; 
+}
+
+h1{
+    margin-left: 70px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+  top: 300px;
+  flex-direction: row;
+}
+
+.container-item{
+    justify-content: center;
+    text-align: center;
+}
+
+
+.navbar {
+  overflow: hidden;
+  text-transform: uppercase;
+  background-color: #181616;
+  /* position: fixed; */
+  top: 0;
+  height: 75px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-left: 50px;
+}
+.navbar a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+input.searchbar {
+  border-radius: 3px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  font-weight: 100;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  margin-right: 10px;
+  height: 33px;
+  width: 225px;
+}
+
+input.listbar {
+    border-radius: 3px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-weight: 500;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    margin-right: 0px;
+    height: 30px;
+    width: 200px;
+  }
+
+button.lookup {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 0.1em solid #ffffff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: 100;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+button.lookup:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+button.add {
+  display: inline-block;
+  padding: 0px 5px;
+  border: 0.1em solid #ffffff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: 300;
+  margin-top: 5px;
+  height: 25px;
+  width: 140px;
+  background-color: #f08522;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  transition: all 0.1s;
+}
+
+button.add:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+button.add::after {
+  content: "Add Book";
+}
+
+
+table {
+	width:100%;
+    border:1px solid ;
+    background-color: black;
+}
+

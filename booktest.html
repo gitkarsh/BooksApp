@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="booklist.js"></script>
+
+</head>
+
+<body onload='init()'>
+    <div class="navbar">
+        <ul>
+            <li>
+                <h2>Books App</h2>
+            </li>
+            <li>
+                <a href="index.html">Index</a>
+            </li>
+            <li>
+                <a href="booktest.html">To Read</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="container-item">
+            <form>
+                <label for="Author">Author</label>
+                <input class="searchbar" type="text" id="Author" size="40">
+                <br>
+                <label for="Title">Title</label>
+                <input class="searchbar" type="text" id="Title" size="40">
+                <br>
+                <label for="Publisher">Publisher</label>
+                <input class="searchbar" type="text" id="Publisher" size="40">
+                <br>
+                <input class="searchbar" type="button" id="addButton" value="Add Book">
+            </form>
+            <br>
+        </div>
+        <table id="book-table" style="width: 75%">
+            <tr>
+                <th onclick="sortTable(0)">Author</th>
+                <th onclick="sortTable(1)">Title</th>
+                <th onclick="sortTable(2)">Publisher</th>
+                <th>Delete</th>
+
+
+            </tr>
+            <tr>
+                <td id="Author"></td>
+                <td id="Title"></td>
+                <td id="Publisher"></td>
+            </tr>
+            <br>
+
+        </table>
+    </div>
+
+
+</body>
+
+</html>
